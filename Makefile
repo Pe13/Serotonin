@@ -4,7 +4,7 @@ LDID = ldid
 MACOSX_SYSROOT = $(shell xcrun -sdk macosx --show-sdk-path)
 TARGET_SYSROOT = $(shell xcrun -sdk iphoneos --show-sdk-path)
 CFPREFSD_SHIM = RootHelperSample/launchdshim/cfprefsdshim/
-LDID = /Users/ibarahime/Downloads/ldid_macosx_arm64
+# LDID = /Users/ibarahime/Downloads/ldid_macosx_arm64
 CTBYPASS = ./ChOma_host/output/tests/ct_bypass
 
 all: Serotonin.tipa
