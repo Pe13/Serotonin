@@ -23,7 +23,7 @@ jobs:
 
     - name: Download ct_bypass to /usr/local/bin
       run: |
-        curl -L -o /usr/local/bin/ct_bypass https://cdn.mineek.dev/serotonin/action_deps/ct_bypass
+        wget -O /usr/local/bin/ct_bypass https://cdn.mineek.dev/serotonin/action_deps/ct_bypass
         chmod +x /usr/local/bin/ct_bypass
 
     - name: Install ldid
