@@ -6,7 +6,7 @@ include $(THEOS)/makefiles/common.mk
 LIBRARY_NAME = xpcproxyhook
 
 xpcproxyhook_FILES = $(wildcard *.m) $(wildcard *.c) ../../jbroot.m
-xpcproxyhook_CFLAGS = -fobjc-arc -Wno-error
+xpcproxyhook_CFLAGS = -fobjc-arc -Wno-error -I"../../../usprebooter/Private Headers I stole from the macOS SDK"
 xpcproxyhook_CODESIGN_FLAGS = -S
 xpcproxyhook_LDFLAGS = -F./Frameworks
 xpcproxyhook_EXTRA_FRAMEWORKS += IOKit
